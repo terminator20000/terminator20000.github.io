@@ -5,18 +5,20 @@
     <title>Research</title>
   </head>
   <body>
-    <h1>Getting Information</h1>
-    
+    <h1>Gathering Information</h1>
+
     <img src = "https://www.aiip.org/resources/Pictures/AIIP%20Website%20Icons/AIIP%20Research%20Icon.png" width = 200/>
     
     <script type = "text/javascript">
       function funcClick(){
-        var x = document.getElementById("t");
-        x.innerHTML = "Hello!";
+        var x = document.getElementById("v");
+        String y = x.innerHTML = "Hello!"; 
+        console.log("Here is the input section --> " + y);
       }
     </script>
     
     <p id="t">This site has been created as a way to store information about different things.</p>
+    <p id="v">When you are ready, click on the button below to input anything you would like.</p>
     
     <button type = "button" onclick = "funcClick()"> Click me </button>
   </body>
